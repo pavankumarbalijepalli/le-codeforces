@@ -15,5 +15,14 @@
 # 
 # ----------------
 
+s = input()
+target = 'hello'
+
+while s and target:
+    if s[0] == target[0]:
+        target = target[1:]
+    s = s[1:]
+
+print('YES' if target=='' else 'NO')
 
 
