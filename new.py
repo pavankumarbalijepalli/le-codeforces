@@ -15,5 +15,15 @@
 # 
 # ----------------
 
+nums = [3,2,3]
+counter = {}
+for num in nums:
+    if counter.get(num):
+        counter[num] += 1
+        if counter[num] > len(nums)//2:
+            print(num)
+    else:
+        counter[num] = 1
+                
 
 
